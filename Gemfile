@@ -15,6 +15,10 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+gem 'jquery-rails', '~> 4.4'
+gem 'coffee-rails', '~> 5.0'
+gem 'uglifier', '~> 4.2'
+gem 'sdoc', '0.4.0', group: :doc
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -31,6 +35,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
+  gem 'spring', '~> 2.1'
 end
 
 group :development do
@@ -42,11 +47,14 @@ group :development do
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+  gem 'mini_backtrace', '~> 0.1.3'
+  gem 'minitest-reporters', '~> 1.4', '>= 1.4.3'
+end
+
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
