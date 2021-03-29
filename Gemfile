@@ -17,7 +17,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails', '~> 4.4'
 gem 'coffee-rails', '~> 5.0'
-# gem 'uglifier', '~> 4.2'
+gem 'uglifier', '~> 4.2'
 # gem 'sdoc', '0.4.0', group: :doc
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
