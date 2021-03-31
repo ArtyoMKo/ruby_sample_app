@@ -18,12 +18,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails', '~> 4.4'
 gem 'coffee-rails', '~> 5.0'
 gem 'uglifier', '~> 4.2'
-# For integration testing
-gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+
 # gem 'sdoc', '0.4.0', group: :doc
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -39,9 +36,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '~> 1.4'
   gem 'spring', '~> 2.1'
   gem 'guard'
+  # For integration testing
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 end
 
 group :development do
