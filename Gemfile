@@ -22,6 +22,8 @@ gem 'uglifier', '~> 4.2'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '~> 1.4'
 # gem 'sdoc', '0.4.0', group: :doc
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -48,8 +50,7 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4'
+
 end
 
 group :test do
