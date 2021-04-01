@@ -34,8 +34,6 @@ gem 'bcrypt', '~> 3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,6 +51,8 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '~> 1.4'
 
 end
 
@@ -64,7 +64,7 @@ end
 
 group :production do
   gem 'pg', '~> 1.2'
-  gem 'rails_12factor', '0.0.3'
+  gem 'rails_12factor', '~>0.0.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
