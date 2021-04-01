@@ -20,6 +20,8 @@ gem 'coffee-rails', '~> 5.0'
 gem 'uglifier', '~> 4.2'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+# Password hash crypting
+gem 'bcrypt', '~> 3.1'
 
 # gem 'sdoc', '0.4.0', group: :doc
 # Use Redis adapter to run Action Cable in production
