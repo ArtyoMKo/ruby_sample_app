@@ -40,6 +40,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'spring', '~> 2.1'
   gem 'guard'
+  gem 'webrick'
   # For integration testing
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 end
